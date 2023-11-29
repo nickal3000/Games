@@ -8,7 +8,7 @@ public class HOL {
 	public static int playHOL() {
 
 		Scanner in = new Scanner(System.in);
-		Random random = new Random();
+		Random randy = new Random();
 
 		int upper = -1;
 		int dif; // Difficulty
@@ -38,7 +38,7 @@ public class HOL {
 		System.out.println("I've picked a random number between 1 and " + upper + ".");
 		System.out.println("Try to guess it.");
 
-		int number = random.nextInt(upper);
+		int number = randy.nextInt(upper);
 		int tries = 0;
 		int guess = 0;
 
@@ -73,6 +73,7 @@ public class HOL {
 		if (tries == 10) {
 			System.out.println("Sorry you ran out of guesses. The number was " + number);
 		}
+
 		return 0;
 
 	}// end HOL
